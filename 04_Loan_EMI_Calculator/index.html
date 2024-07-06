@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Loan EMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="form_container">
+        <h1>Get Your EMI Account</h1>
+        <br>
+        <hr />
+        <div class="form_group">
+          <label for="loan_amount">Loan Amount</label>
+          <input type="number" name="loan_amount" min="1000" max="1000000" id="amount"  />
+        </div>
+        <div class="form_group">
+        <label for="interest_amount">Intrest Amount</label>
+        <input type="number" name="interest_amount" min="6" max="60" id="rate" >
+        </div>
+        <div class="form_group">
+          <label for="tenure">Tenure</label>
+          <input type="number" name="tenure" min="3" max="60" id="tenure" >
+        </div>
+        <input type="submit" value="Calculate" id="submit" >
+        <div id="result"></div>
+      </div>
+      
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgb(155, 171, 187);
+}
+h1{
+    color: blue;
+}
+
+.form_container
+{
+    border: 2px solid blue;
+    text-align: center;
+    height: 320px;
+    width: 380px;
+    padding: 20px;
+    background-color: white;
+}
+.form_group
+{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+.form_group input[type=number]
+{
+    width: 165px;
+}
+
+#submit
+{
+    color: white;
+    background-color: blue;
+    padding: 10px 20px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#result
+{
+    padding-top: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    color: green;
+}
