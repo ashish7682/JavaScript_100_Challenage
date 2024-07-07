@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* background-color: rgb(228, 199, 175); */
+}
+
+#cal_form {
+  border: 1px solid black;
+  height: 365px;
+  width: 280px;
+  padding: 10px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px,
+    rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px,
+    rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+  border-radius: 6px;
+}
+
+.display input {
+  width: 250px;
+  height: 50px;
+  cursor: not-allowed;
+  text-align: right;
+  background-color: rgb(145, 216, 145);
+  color: black;
+  font-size: 20px;
+  border-radius: 8px;
+  border-style: none;
+  margin-top: 15px;
+}
+
+.button_group {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+.button_group input[type="button"] {
+  height: 40px;
+  font-weight: bold;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+#AC {
+  background-color: blueviolet;
+  color: white;
+}
+#DEL {
+  background: red;
+  color: white;
+}
+#OP {
+  background-color: yellow;
+  color: white;
+}
+#Equal {
+  background-color: darkorange;
+  color: white;
+}
+#Equal:focus {
+  background-color: green;
+}
+#Percent {
+  background-color: tomato;
+  color: white;
+}

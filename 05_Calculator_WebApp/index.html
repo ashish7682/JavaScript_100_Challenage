@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcultor WebApp</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="cal_form" name="calculator">
+        <div class="display">
+          <input type="text" id="num" name="display" placeholder="0" readonly  />
+        </div>
+        <div class="button_group">
+          <input type="button" id="AC" value="AC" onclick="num.value=''"/>
+          <input type="button" id="DEL" value="DEL" onclick="num.value=num.value.toString().slice(0,-1)"/>
+          <input type="button" value="%" id="Percent" onclick="A5()"/>
+          <input type="button" value="/" id="OP" onclick="A4()"/>
+          <!-- <br /> -->
+          <input type="button" value="7" onclick="num.value+='7'"/>
+          <input type="button" value="8" onclick="num.value+='8'"/>
+          <input type="button" value="9" onclick="num.value+='9'"/>
+          <input type="button" value="x" id="OP" onclick="A3()"/>
+          <!-- <br /> -->
+          <input type="button" value="4"  onclick="num.value+='4'"/>
+          <input type="button" value="5"  onclick="num.value+='5'"/>
+          <input type="button" value="6"  onclick="num.value+='6'"/>
+          <input type="button" value="-" id="OP" onclick="A2()"/>
+          <!-- <br /> -->
+          <input type="button" value="1"  onclick="num.value+='1'"/>
+          <input type="button" value="2"  onclick="num.value+='2'"/>
+          <input type="button" value="3"  onclick="num.value+='3'"/>
+          <input type="button" value="+" id="OP" onclick="A1()"/>
+          <!-- <br /> -->
+          <input type="button" value="00" onclick="num.value+='00'"/>
+          <input type="button" value="0"  onclick="num.value+='0'"/>
+          <input type="button" value="."  onclick="num.value+='.'"/>
+          <!-- <input type="button" value="=" id="Equal" onclick="num.value=eval(num.value)"/> -->
+            <input type="button" value="=" id="Equal" onclick="myfunction()"/>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
